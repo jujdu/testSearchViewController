@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		6F4FC2F524FADB2500B96DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC2F424FADB2500B96DDC /* AppDelegate.swift */; };
 		6F4FC2F724FADB2500B96DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC2F624FADB2500B96DDC /* SceneDelegate.swift */; };
-		6F4FC2F924FADB2500B96DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC2F824FADB2500B96DDC /* ViewController.swift */; };
+		6F4FC2F924FADB2500B96DDC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC2F824FADB2500B96DDC /* MainVC.swift */; };
 		6F4FC2FC24FADB2500B96DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FC2FA24FADB2500B96DDC /* Main.storyboard */; };
 		6F4FC2FE24FADB2700B96DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FC2FD24FADB2700B96DDC /* Assets.xcassets */; };
 		6F4FC30124FADB2700B96DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FC2FF24FADB2700B96DDC /* LaunchScreen.storyboard */; };
-		6F4FC30C24FADB2800B96DDC /* TestSearchControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC30B24FADB2800B96DDC /* TestSearchControllerTests.swift */; };
-		6F4FC31724FADB2800B96DDC /* TestSearchControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC31624FADB2800B96DDC /* TestSearchControllerUITests.swift */; };
+		6F4FC32524FADFDC00B96DDC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC32424FADFDC00B96DDC /* MainView.swift */; };
+		6F4FC32924FAE0D200B96DDC /* RainbowSixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC32824FAE0D200B96DDC /* RainbowSixOperator.swift */; };
+		6F4FC32D24FAE51800B96DDC /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC32C24FAE51800B96DDC /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +39,16 @@
 		6F4FC2F124FADB2500B96DDC /* TestSearchController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSearchController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4FC2F424FADB2500B96DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F4FC2F624FADB2500B96DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F4FC2F824FADB2500B96DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F4FC2F824FADB2500B96DDC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6F4FC2FB24FADB2500B96DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F4FC2FD24FADB2700B96DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F4FC30024FADB2700B96DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4FC30224FADB2800B96DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4FC30724FADB2800B96DDC /* TestSearchControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSearchControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F4FC30B24FADB2800B96DDC /* TestSearchControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSearchControllerTests.swift; sourceTree = "<group>"; };
-		6F4FC30D24FADB2800B96DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4FC31224FADB2800B96DDC /* TestSearchControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSearchControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F4FC31624FADB2800B96DDC /* TestSearchControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSearchControllerUITests.swift; sourceTree = "<group>"; };
-		6F4FC31824FADB2800B96DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4FC32424FADFDC00B96DDC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6F4FC32824FAE0D200B96DDC /* RainbowSixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowSixOperator.swift; sourceTree = "<group>"; };
+		6F4FC32C24FAE51800B96DDC /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				6F4FC2F324FADB2500B96DDC /* TestSearchController */,
-				6F4FC30A24FADB2800B96DDC /* TestSearchControllerTests */,
-				6F4FC31524FADB2800B96DDC /* TestSearchControllerUITests */,
 				6F4FC2F224FADB2500B96DDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +99,8 @@
 			children = (
 				6F4FC2F424FADB2500B96DDC /* AppDelegate.swift */,
 				6F4FC2F624FADB2500B96DDC /* SceneDelegate.swift */,
-				6F4FC2F824FADB2500B96DDC /* ViewController.swift */,
+				6F4FC32A24FAE0D700B96DDC /* Models */,
+				6F4FC32624FAE08800B96DDC /* Modules */,
 				6F4FC2FA24FADB2500B96DDC /* Main.storyboard */,
 				6F4FC2FD24FADB2700B96DDC /* Assets.xcassets */,
 				6F4FC2FF24FADB2700B96DDC /* LaunchScreen.storyboard */,
@@ -110,22 +109,38 @@
 			path = TestSearchController;
 			sourceTree = "<group>";
 		};
-		6F4FC30A24FADB2800B96DDC /* TestSearchControllerTests */ = {
+		6F4FC32624FAE08800B96DDC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6F4FC30B24FADB2800B96DDC /* TestSearchControllerTests.swift */,
-				6F4FC30D24FADB2800B96DDC /* Info.plist */,
+				6F4FC32724FAE09000B96DDC /* Main */,
+				6F4FC32B24FAE4FD00B96DDC /* Details */,
 			);
-			path = TestSearchControllerTests;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		6F4FC31524FADB2800B96DDC /* TestSearchControllerUITests */ = {
+		6F4FC32724FAE09000B96DDC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				6F4FC31624FADB2800B96DDC /* TestSearchControllerUITests.swift */,
-				6F4FC31824FADB2800B96DDC /* Info.plist */,
+				6F4FC2F824FADB2500B96DDC /* MainVC.swift */,
+				6F4FC32424FADFDC00B96DDC /* MainView.swift */,
 			);
-			path = TestSearchControllerUITests;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F4FC32A24FAE0D700B96DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F4FC32824FAE0D200B96DDC /* RainbowSixOperator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F4FC32B24FAE4FD00B96DDC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6F4FC32C24FAE51800B96DDC /* DetailsVC.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4FC2F924FADB2500B96DDC /* ViewController.swift in Sources */,
+				6F4FC2F924FADB2500B96DDC /* MainVC.swift in Sources */,
+				6F4FC32D24FAE51800B96DDC /* DetailsVC.swift in Sources */,
+				6F4FC32524FADFDC00B96DDC /* MainView.swift in Sources */,
 				6F4FC2F524FADB2500B96DDC /* AppDelegate.swift in Sources */,
 				6F4FC2F724FADB2500B96DDC /* SceneDelegate.swift in Sources */,
+				6F4FC32924FAE0D200B96DDC /* RainbowSixOperator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4FC30C24FADB2800B96DDC /* TestSearchControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4FC31724FADB2800B96DDC /* TestSearchControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
