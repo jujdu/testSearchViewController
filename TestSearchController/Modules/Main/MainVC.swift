@@ -13,7 +13,8 @@ class MainVC: UIViewController {
     //MARK: - Views
     
     let customView = MainView()
-    private let searchController = UISearchController(searchResultsController: nil)
+    let searchVC = SearchVC()
+    private lazy var searchController = UISearchController(searchResultsController: searchVC)
     private var searchBarIsEmpty: Bool {
         return searchController.searchBar.text?.isEmpty ?? true
     }
@@ -47,9 +48,11 @@ class MainVC: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Find your R6 operator"
+        searchController.showsSearchResultsController = true
         navigationItem.searchController = searchController
         navigationItem.title = "R6 Operators"
         definesPresentationContext = true
+        searchController.delegate = self
     }
 
 }
@@ -59,11 +62,12 @@ class MainVC: UIViewController {
 extension MainVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterOperators(with: searchController.searchBar.text!)
-        customView.tableView.reloadData()
+//        searchController.searchResultsController?.view.isHidden = false
+        searchVC.tableView.reloadData()
     }
     
     private func filterOperators(with text: String) {
-        filteredOperators = operators.filter { r6Operator -> Bool in
+        searchVC.filteredOperators = operators.filter { r6Operator -> Bool in
             return r6Operator.name.lowercased().contains(text.lowercased())
         }
     }
@@ -72,7 +76,7 @@ extension MainVC: UISearchResultsUpdating {
 
 //MARK: - UITableViewDataSource Implementation
 
-extension MainVC: UITableViewDataSource {
+extension MainVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -94,7 +98,17 @@ extension MainVC: UITableViewDataSource {
 
 //MARK: - UITableViewDelegate Implementation
 
-extension MainVC: UITableViewDelegate {
+extension MainVC: UISearchControllerDelegate {
+    func willPresentSearchController(_ searchController: UISearchController) {
+        
+    }
     
+    func didPresentSearchController(_ searchController: UISearchController) {
+//        searchController.searchResultsController?.view.alpha = 0
+//        searchController.searchResultsController?.view.isHidden = false
+//        UIView.animate(withDuration: 0.2) {
+//            searchController.searchResultsController?.view.alpha = 1
+//        }
+    }
 }
 
